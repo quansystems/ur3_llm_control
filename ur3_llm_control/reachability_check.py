@@ -15,7 +15,7 @@ import sys
 import numpy as np
 
 from .paths import config_path
-from .scene_model import SceneConfig
+from .world_state_model import SceneConfig
 from .ur_kinematics import URKinematics
 
 

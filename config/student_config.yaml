@@ -1,10 +1,10 @@
-# >>> KIỂM TRA LẠI THÔNG TIN CỦA BẠN TRƯỚC KHI DEMO <<<
-student_name: "Le Trong Nghia"
-student_id: "23020754"
+# >>> THÔNG TIN SINH VIÊN - DỰ ÁN CỦA BẠN <<<
+student_name: "Nguyen Van Quan"
+student_id: "23020761"
 
 # P = (hai chữ số cuối MSSV) mod 6  -> được TÍNH TỰ ĐỘNG trong code
 # (ur3_llm_control/student_task.py), không cần và không nên điền tay.
-# Với 23020754: P = 54 mod 6 = 0 -> Zone A = red, Zone B = yellow, Zone C = blue.
+# Với 23020761: P = 61 mod 6 = 1 -> Zone A = red, Zone B = yellow, Zone C = blue.
 
 llm:
   # 9Router: endpoint OpenAI-compatible, chạy local ở cổng 20128
@@ -15,15 +15,13 @@ llm:
   # (để không lộ key khi nộp bài / đẩy lên git).
   api_key: ""
 
-  # Model Gemini qua provider "Gemini" (API key AI Studio) trong 9Router.
-  # Tên có dạng <alias provider>/<model>. Một số lựa chọn:
-  #   gemini/gemini-2.5-flash       (mặc định: nhanh, free tier AI Studio)
-  #   gemini/gemini-2.5-pro         (mạnh hơn, chậm hơn, quota free thấp hơn)
-  #   gemini/gemini-2.5-flash-lite  (nhanh nhất, kém hơn ở câu lệnh nhiều bước)
-  #   gc/gemini-2.5-flash           (provider "Gemini CLI" = đăng nhập OAuth tài khoản Google;
-  #                                  9Router cảnh báo có rủi ro bị hạn chế/khoá tài khoản)
+  # Model mặc định khuyến nghị cho project này: Gemini qua 9Router.
+  # Tên có dạng <alias provider>/<model>. Các lựa chọn thông dụng:
+  #   gemini/gemini-2.5-flash       (mặc định: nhanh, phù hợp demo)
+  #   gemini/gemini-2.5-pro         (mạnh hơn, chậm hơn)
+  #   gemini/gemini-2.5-flash-lite  (nhanh nhất)
   # Biến môi trường NINEROUTER_MODEL ghi đè giá trị này.
-  model: "oc/muse-spark-1.2-contributor-free"
+  model: "gemini/gemini-2.5-flash"
 
   temperature: 0.0
   timeout_s: 90            # Gemini 2.5 có bước "thinking" nên đôi khi mất 10-30 s

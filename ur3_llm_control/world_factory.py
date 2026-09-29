@@ -7,7 +7,7 @@ moved only by our virtual gripper through /gazebo/set_entity_state.
 """
 import sys
 
-from .scene_model import SceneConfig
+from .world_state_model import SceneConfig
 
 
 def _rgba(v):

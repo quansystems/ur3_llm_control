@@ -8,8 +8,8 @@ The motion layer is abstract (MotionBackend) so the same skills run against
   * MoveItBackend  (ROS 2 / MoveIt 2 / Gazebo, see moveit_backend.py)
   * FakeMotionBackend (pure python, used by the unit tests)
 """
-from .scene_model import SceneConfig, WorldState
-from .skill_spec import Status
+from .world_state_model import SceneConfig, WorldState
+from .skill_registry import Status
 
 
 class MotionBackend:

@@ -25,13 +25,13 @@ from visualization_msgs.msg import Marker, MarkerArray
 import yaml
 
 from .fake_backend import FakeMotionBackend
-from .llm_planner import LLMError, LLMPlanner, make_client_from_config
+from .planner_service import LLMError, LLMPlanner, make_client_from_config
 from .pipeline import CommandPipeline
-from .robot_skills import RobotSkills
-from .scene_model import SceneConfig, WorldState
-from .skill_spec import Status
-from .student_task import describe
-from .task_validator import TaskValidator
+from .robot_action_moves import RobotSkills
+from .world_state_model import SceneConfig, WorldState
+from .skill_registry import Status
+from .zone_mapping import describe
+from .task_guard import TaskValidator
 
 
 def _share(*parts):

@@ -4,11 +4,11 @@
   <name>ur3_llm_control</name>
   <version>1.1.0</version>
   <description>
-    Natural-language control of a simulated UR3/UR3e: an LLM (through 9Router) selects and
-    orders whitelisted robot skills, a validator checks the plan, and every motion is
-    planned and executed by MoveIt 2 in Gazebo Classic.
+    Student-owned ROS 2 package for controlling a simulated UR3/UR3e with natural language.
+    The project uses an LLM via 9Router, a validator for safety checks, and MoveIt 2 for
+    motion planning in Gazebo Classic.
   </description>
-  <maintainer email="student@example.com">Le Trong Nghia</maintainer>
+  <maintainer email="nguyenvanquan.student@example.com">Nguyen Van Quan</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_python</buildtool_depend>

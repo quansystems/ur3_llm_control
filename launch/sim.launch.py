@@ -46,8 +46,8 @@ def _scene_ur_type(path):
 
 
 def launch_setup(context, *args, **kwargs):
-    from ur3_llm_control.scene_model import SceneConfig
-    from ur3_llm_control.world_gen import generate
+    from ur3_llm_control.world_state_model import SceneConfig
+    from ur3_llm_control.world_factory import generate
 
     ur_type = LaunchConfiguration('ur_type').perform(context)
     scene_file = LaunchConfiguration('scene_file').perform(context)

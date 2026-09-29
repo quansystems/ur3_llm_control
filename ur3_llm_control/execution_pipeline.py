@@ -7,7 +7,7 @@
 2. execute(): runs the steps one by one through RobotSkills, prints the
    status table, stops at the first failure.
 """
-from .skill_spec import Status, step_to_str
+from .skill_registry import Status, step_to_str
 
 LINE_WIDTH = 30
 

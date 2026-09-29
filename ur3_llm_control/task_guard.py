@@ -14,8 +14,8 @@ import re
 from dataclasses import dataclass, field
 from typing import List
 
-from .scene_model import WorldState
-from .skill_spec import MAX_PLAN_STEPS, SKILLS
+from .world_state_model import WorldState
+from .skill_registry import MAX_PLAN_STEPS, SKILLS
 
 _LOW_LEVEL_KEYS = re.compile(r'joint|trajector|position|velocit|torque|effort|angle', re.I)
 

@@ -11,9 +11,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from .skill_spec import SKILLS
-from .student_task import compute_p, zone_assignment
-from .task_validator import ValidationResult
+from .skill_registry import SKILLS
+from .zone_mapping import compute_p, zone_assignment
+from .task_guard import ValidationResult
 
 
 class LLMError(RuntimeError):
